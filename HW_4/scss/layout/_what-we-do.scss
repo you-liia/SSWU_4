@@ -1,0 +1,88 @@
+.what-we-do {
+    position: relative;
+ 
+    &__dots {
+        background-image: url(../../img/wide-dots.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 9vw;
+        height: 7.834vw;
+        top: -15%;
+    }
+    
+    &__container {
+        max-width: 84.219vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 8.073vw;
+        padding-bottom: 11.896vw;
+    }
+
+    &__subtitle {
+        @include subtitle;
+        margin-bottom: 1.25vw;
+    }
+
+    &__title {
+        @include title;
+        margin-bottom: 2.619vw;
+    }
+
+    &__filter {
+        display: flex;
+        margin-bottom: 5.765vw;
+    }
+
+    &__filter-item {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 0.833vw;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white-color;
+        background: $green-color;
+        border: 0.26vw solid $green-color;
+        border-radius: 1.042vw; 
+        width: 10.764vw;
+        padding: 0.6vw 0;
+        margin-right: 3.727vw;
+        cursor: pointer;
+    }
+
+    &__filter-item_active {
+        color: $green-color;
+        background: $white-color;
+        border: 0.26vw solid $green-color;
+    }
+
+    &__projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4.8vw;
+    }
+
+    &__projects-item {
+        border-radius: 3.125vw 0;
+        background: $white-color;
+        box-shadow: 0 0.417vw 1.042vw 0 rgba(0, 0, 0, 0.14);
+        padding: 2.2vw 3.48vw 2.2vw 3.48vw;
+        &:hover {
+            background: $light-brown-color;
+            .what-we-do__projects-item-title,
+            .what-we-do__projects-item-text {
+                color: $white-color; 
+            }
+        }
+    }
+
+    &__projects-item-title {
+        @include card-title;
+    }
+
+    &__projects-item-text {
+        @include text;
+        width: 17.896vw;
+    }
+}

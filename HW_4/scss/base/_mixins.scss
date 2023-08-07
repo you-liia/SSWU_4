@@ -1,0 +1,71 @@
+@mixin container {
+    max-width: 74.479vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.042vw;
+    color: $dark-gray-color;
+    text-transform: uppercase;
+}
+@mixin title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2.5vw;
+    color: $black-color;
+    text-transform: capitalize;
+}
+@mixin text { 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.938vw;
+    line-height: 1.458vw; 
+    color: $dark-gray-color;
+}
+@mixin button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.938vw;
+    text-transform: uppercase;
+    color: $white-color;
+    background: $green-color;
+    padding: 0.6vw 1.6vw;
+    border-radius: 1.042vw 0;
+    cursor: pointer;
+}
+@mixin image {
+    position: relative;
+    border-radius: 7.292vw 0;
+    z-index: 1; 
+}
+@mixin image-decor {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 1.684vw;
+        right: -1.768vw;
+        width: 100%;
+        height: 100%;
+        border-radius: 7.292vw 0;
+        border: 0.104vw solid $brown-color;
+    }
+}
+@mixin card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.25vw;
+    color: $black-color;
+}
+@mixin form-item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.938vw;
+    color: $dark-gray-color;
+    background: $light-gray-color;
+    border-radius: 1.042vw 0;
+    height: 2.604vw;
+    padding-left: 1.3vw;
+}

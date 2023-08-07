@@ -1,0 +1,82 @@
+.header {
+    position: sticky;
+    top: -3vw;
+    z-index: 10;
+    background-color: $white-color;
+
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5.461vw;
+        padding-bottom: 1.984vw;
+    }
+
+    &__logo {
+        width: 7.852vw; 
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        margin-right: 3.328vw; 
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.833vw;
+        color: $black-color;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 0.255vw 0.885vw; 
+        border: 0.2vw solid transparent;
+        border-radius: 0.781vw; 
+        transition: border-color .3s;
+        
+        &:hover {   
+            color: $green-color; 
+            border-color: $green-color;  
+        }
+    }
+
+    &__link-home {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.833vw;
+        color: $dark-gray-color;
+    }
+
+    &__auth {
+        border-radius: 0.781vw 0;
+        background: $light-brown-color;
+        padding: 0.255vw 0.988vw;
+    }
+
+    &__sign-up {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.833vw;
+        color: $white-color;
+    }
+    
+    &__progress-container {
+        width: 100%;
+        height: 0.417vw;
+        background: $light-gray-color;
+    }
+    
+    &__progress-bar {
+        width: 0%;
+        height: 0.417vw;
+        background: $green-color;
+        transition: width 0.1s;
+    }
+}

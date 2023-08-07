@@ -1,0 +1,100 @@
+.footer {
+    background: $super-light-gray-color;
+
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 4.844vw;
+    }
+
+    &__logo {
+        width: 7.865vw;
+        margin-top: 0.6vw;
+    }
+
+    &__summary-text {
+        @include text;
+        width: 18.229vw;
+        margin-top: 1vw;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        width: 38.75vw;
+        padding-bottom: 3.594vw;
+    }
+
+    &__menu-title {
+        @include card-title;
+        font-weight: 600;
+        display: block;
+        line-height: 3vw;
+    }
+
+    &__menu-link {
+        @include text;
+        display: block;
+        line-height: 2.3vw;
+    }
+    
+    &__icons-text {
+        @include card-title;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 0.99vw;
+    }
+
+    &__social-media-link {
+        width: 1.936vw;
+        height: 1.936vw;
+        display: inline-block;
+        border-radius: 50%;
+        background: $soft-grey-color;
+    
+        &:hover {
+            background: $green-color;
+        }
+    }
+
+    &__social-media-item {
+        width: 0.99vw;  
+    }
+
+    &__social-media-item_facebook {
+        height: 1.198vw;
+        padding: 0.365vw 0.474vw 0.373vw 0.472vw;
+    }
+
+    &__social-media-item_twitter {
+        height: 1.042vw;
+        padding: 0.477vw 0.447vw 0.417vw;
+    }
+
+    &__social-media-item_instagram {
+        height: 0.983vw;
+        padding: 0.506vw 0.477vw 0.447vw;
+    }
+
+    &__social-media-item_linkedin {
+        height: 1.042vw;
+        padding: 0.365vw 0.395vw 0.529vw 0.469vw;
+    }
+    
+    &__line {
+        border: 0.052vw solid $grey-color;
+    }
+
+    &__rights {
+        @include text;
+        text-align: center;
+        padding-top: 0.781vw;
+        padding-bottom: 0.938vw;
+    }
+
+    &__rights-word {
+        color: $green-color;
+    }
+}

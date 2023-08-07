@@ -1,0 +1,121 @@
+.about-us {
+    position: relative;
+
+    &__dots {
+        background-image: url(../../img/high-dots.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 12.8vw;
+        height: 13.258vw;
+        top: -5%;
+        right: -1%;
+    }
+
+    &__container {
+        @include container;
+    }
+
+    &__interiors {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 14.277vw;
+        padding-bottom: 5.179vw;
+    }
+
+    &__interiors-image-container {
+        @include image-decor;
+        &::after {
+            top: -1.684vw;
+            right: 1.768vw;
+        }
+    }
+    
+    &__interiors-image {
+        @include image;
+        width: 35.412vw;
+    }
+
+    &__interiors-subtitle {
+        @include subtitle;
+        margin-bottom: 3.073vw;
+    }
+
+    &__interiors-title {
+        @include title;
+    }
+
+    &__interiors-text {
+        @include text;
+        width: 28.323vw;
+        margin-bottom: 2.347vw;
+    }
+
+    &__interiors-btn {
+        @include button;
+    }
+
+    &__dots-middle {
+        background-image: url(../../img/wide-dots.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 11.053vw;
+        height: 7.834vw;
+        top: 49.5%;
+        left: 10%;
+    }
+    
+    &__years {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5.179vw;
+        padding-bottom: 13.055vw;
+        position: relative;
+    }
+
+    &__years-dots {
+        background-image: url(../../img/split-dots.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 11.07vw;
+        height: 7.997vw;
+        top: 43%;
+        right: -18%;
+    }
+
+    &__years-number {
+        margin-top: 0.521vw;
+        position: relative;
+        width: 17vw; 
+        font-size: 14vw; 
+        font-weight: bold; 
+        color: transparent; 
+        background-image: url(../../img/number-bg.png);
+        background-size: cover;
+        background-position: center;
+        -webkit-background-clip: text;
+        background-clip: text; 
+    }
+
+    &__years-title {
+        @include title;
+        width: 30vw; 
+        margin-bottom: 1vw;
+        margin-top: -2vw;
+    }
+
+    &__years-btn {
+        @include button;
+    }
+
+    &__years-image-container {
+        @include image-decor;
+    }
+
+    &__years-image {
+        @include image;
+        width: 35.464vw;
+    }
+}

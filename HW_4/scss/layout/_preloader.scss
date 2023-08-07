@@ -1,0 +1,72 @@
+body {
+    overflow-y: hidden;
+}
+
+.preloader {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.688vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    background: $super-light-gray-color;
+    opacity: 0.99; 
+
+    &__container {
+        margin-top: -6.25vw;
+    }
+
+    &__item {
+        display: inline-block;
+        color: $black-color;
+        opacity: 0;
+        transform: translateY(-100%);
+        text-shadow: 0.052vw 0.052vw 0.052vw $black-color;
+        transition: opacity 0.5s, transform 0.5s, color 0.5s;
+        padding: 1.042vw;
+    }
+
+    &__heart {
+        opacity: 0.9;
+        z-index: -1;
+        position: relative;
+        width: 1.042vw;
+        height: 1.042vw;
+        background-color: $red-color;
+        animation: heartAnimation 7s forwards;
+        transform: rotate(290deg);
+    }
+
+    &__heart::before,
+    &__heart::after {
+        content: "";
+        position: absolute;
+        width: 1.042vw;
+        height: 1.042vw;
+        background-color: $red-color;
+    }
+
+    &__heart::before {
+        border-radius: 50% 50% 0 0;
+        top: -0.521vw;
+        left: 0;
+    }
+
+    &__heart::after {
+        border-radius: 50% 50% 50% 0;
+        top: 0;
+        left: 0.521vw;
+    }
+
+    @keyframes heartAnimation {
+        to {
+            transform: rotate(-45deg) scale(150);
+        }
+    }
+}

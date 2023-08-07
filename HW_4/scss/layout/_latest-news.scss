@@ -1,0 +1,79 @@
+.latest-news {
+    background: $super-light-gray-color;
+
+    &__container {
+        @include container;
+        padding-top: 5vw;
+        padding-bottom: 6.644vw;
+    }
+
+    &__subtitle {
+        @include subtitle;
+        text-align: center;
+    }
+
+    &__title {
+        @include title;
+        text-align: center;
+        margin-top: 1.094vw;
+        margin-bottom: 4.271vw;
+    }
+    
+    &__cards { 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card { 
+        opacity: 0; 
+        transform: translateY(1.042vw); 
+        transition: opacity 2s, transform 2s;
+        &:hover{
+            .latest-news__card-image {
+                transform: scale(1.07);
+            }
+        }
+    }
+
+    &__card_visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    &__card-image-container {
+        @include image-decor; 
+        border-radius: 5.208vw 0;
+        &::after {
+            top: 1.4vw;
+            right: -0.5vw;
+        }
+    }
+
+    &__card-image {
+        @include image;
+        border-radius: 5.208vw 0;
+        width: 28.876vw;
+        transition: transform .8s;
+    }
+
+    &__card-title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.563vw;
+        color: $black-color;
+        margin-top: 3.112vw;
+    }
+
+    &__card-text {
+        @include text;
+        width: 31.406vw;
+        width: 30vw;
+        margin-top: 0.885vw;
+    }
+
+    &__card-btn {
+        @include button;
+        font-weight: 600;
+        margin-top: 2.344vw;
+    }
+}

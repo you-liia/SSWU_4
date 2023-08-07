@@ -1,0 +1,109 @@
+.sign-up {
+    position: relative;
+
+    &__dots {
+        background-image: url(../../img/split-dots.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 11.07vw;
+        height: 7.997vw;
+        top: -10%;
+        right: -1%;
+    }
+
+    &__container {
+        @include container;
+        text-align: center;
+        padding-top: 3.906vw;
+        padding-bottom: 5.313vw;
+    }
+
+    &__title {
+        @include title;
+        text-transform: uppercase;
+        margin-bottom: 1.927vw;
+    }
+
+    &__line {
+        width: 24.01vw;
+        border: 0.052vw solid $grey-color;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.083vw;
+    }
+
+    &__text {
+        @include text;
+        margin-bottom: 2.031vw;
+    }
+
+    &__full-name {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3.073vw;
+    }
+ 
+    &__name {
+        @include form-item;
+        width: 16.4vw;
+        margin-right: 5vw;
+    }
+
+    &__surname {
+        @include form-item;
+        width: 17.3vw;
+    }
+
+    &__email-container {
+        margin-bottom: 4.792vw;
+    }
+
+    &__email {
+        @include form-item;
+        width: 40.208vw;
+    }
+
+    &__btn {
+        @include button;
+    }
+
+    &__congrats {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40vw;
+        padding: 4vw 1vw;
+        @include subtitle;
+        color: $white-color;
+        text-align: center;
+        border-radius: 3vw 0;
+        box-shadow: 0 0.208vw 0.313vw rgba(0, 0, 0, 0.1);
+        border: 2vw solid rgb(255, 247, 247);
+        z-index: 11;
+        background: linear-gradient(-45deg, $green-color, #3cdd7c, #69b769);
+        background-size: 400% 400%;
+        animation: Gradient 3s ease infinite;
+    }
+
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    &__congrats-keyword {
+        color: $light-orange-color;
+    }
+    
+    &__congrats-discount {
+        font-size: 2.5vw;
+    }
+}

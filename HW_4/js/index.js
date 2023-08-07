@@ -1,0 +1,9 @@
+import "./modules/preloader.js";
+import "./modules/progress-bar.js";
+import "./modules/what-we-do.js";
+import "./modules/weather.js";
+import "./modules/testimonials.js"
+import "./modules/latest-news.js";
+import "./modules/sign-up.js";
+import "./modules/footer-year.js";
+import "./modules/presence.js";

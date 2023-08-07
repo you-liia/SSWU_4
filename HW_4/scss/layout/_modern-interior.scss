@@ -1,0 +1,48 @@
+.modern-interior {
+
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 4.989vw;
+    }
+
+    &__information {
+        margin-top: 6.406vw;
+        width: 32.931vw;
+    }
+
+    &__subtitle {
+        @include subtitle;
+        margin-bottom: 0.692vw;
+    }
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 3.75vw;
+        line-height: 4.063vw; 
+        color: $black-color;
+        text-transform: capitalize;
+        margin-bottom: 1.325vw;
+    }
+
+    &__text {
+        @include text;
+        margin-bottom: 2.651vw;
+    }
+
+    &__btn {
+        @include button;
+    }
+
+    &__image-container {
+        @include image-decor;
+        margin-top: 2.811vw;
+    }
+    
+    &__image {
+        @include image;
+        width: 37.284vw;
+    }
+}

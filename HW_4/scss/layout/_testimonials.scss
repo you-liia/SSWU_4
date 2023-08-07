@@ -1,0 +1,110 @@
+.testimonials {
+    position: relative;
+
+    &__dots {
+        background-image: url(../../img/wide-dots.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 9vw;
+        height: 7.834vw;
+        top: -7%;
+    }
+
+    &__container {
+        @include container;
+        padding-top: 6.667vw;
+        padding-bottom: 9vw;
+    }
+
+    &__subtitle {
+        @include subtitle;
+        text-align: center;
+    }
+
+    &__title {
+        @include title;
+        text-align: center;
+        text-transform: none;
+    }
+
+    &__buttons {
+        text-align: right;
+        margin-right: 2.5vw;
+        margin-bottom: 1.427vw;
+    }
+
+    &__btn {
+        width: 1.563vw;
+        height: 1.563vw;
+        border-radius: 50%;
+        background: $white-color;
+        color: $dark-gray-color;
+        box-shadow: -0.052vw 0.156vw 0.521vw 0 rgba(0, 0, 0, 0.30);
+        cursor: pointer;
+        font-size: 1vw;
+    
+        &:hover {  
+            color: $white-color;
+            background: $green-color;
+        }
+    }
+
+    &__btn_right {
+        margin-left: 3vw;
+    }
+ 
+    &__card {
+        height: 15vw;
+        padding-left: 3vw; 
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+
+    &__card-wrapper {
+        width: 29.74vw;
+        height: 11vw;
+        border-radius: 3.646vw 0;
+        background: $white-color;
+        box-shadow: 0.365vw 0.365vw 1.563vw 0.26vw rgba(66, 96, 84, 0.15);
+        display: flex;
+        margin: 0 auto;
+    }
+
+    &__card-image {
+        width: 6.771vw;
+        height: 6.823vw;
+        border-radius: 2vw 0;
+        margin-top: 2.135vw;
+        position: absolute;
+        transform: translate(-3.5vw, -0.2vw);
+    }
+
+    &__card-information {
+        margin-top: 2.135vw;
+        margin-left: 5vw;
+    }
+
+    &__card-title {
+        @include text;
+    }
+
+    &__card-name {
+        @include card-title;
+    }
+
+    &__card-quotes {
+        font-family: 'BasicSansSF', sans-serif; 
+        font-weight: 700;
+        font-size: 5vw;
+        color: $brown-color;
+        position: absolute;
+        transform: translate(21vw, -3vw);
+    }
+
+    &__card-text {
+        @include text;
+        width: 22.604vw;
+        margin-top: 0.417vw;
+    }
+}
